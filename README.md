@@ -11,6 +11,7 @@ After changing to the repository directory, the python3 module is run on the ter
 Here, the arguments qi, qo, al, ei, eo and im refer to $q_{\mathrm{in}}$, $q_{\mathrm{out}}$, $\alpha$, $e_{\mathrm{in}}$, $e_{\mathrm{out}}$ and $i_{\mathrm{mut}}$ respectively. The parameter ranges should be restricted to the values given in Section~\ref{sec:data} for optimal results.
 
 It is also possible to import the MLP classifier to another custom python3 script. The input parameters can also be numpy arrays, as shown in the sample script below:
+
     import numpy as np
     from mlp_classify import mlp_classifier
 
