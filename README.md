@@ -1,4 +1,4 @@
-This repository contains a simple python3 code to check if a given configuration of a triple-star system is dynamically stable. Please refer to Vynatheya et al. (2022) for details regarding the multi-layer perceptron classifier.
+This repository contains a simple python3 code to check if a given configuration of a triple-star system is dynamically stable. Please refer to Vynatheya et al. (2022) (see https://arxiv.org/abs/2207.03151) for details regarding the multi-layer perceptron classifier.
 
 The first step is to install the scikit-learn package (if not already available) using the following terminal command:
 
