@@ -29,3 +29,7 @@ It is also possible to import the MLP classifier to another custom python3 scrip
     mlp_stable = mlp_classifier(mlp_pfile, qi, qo, al, ei, eo, im)
 
     # returns True if stable, False if unstable
+
+If this classification model is used for research, this is the paper to cite - https://arxiv.org/abs/2207.03151
+
+Enjoy!
