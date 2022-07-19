@@ -46,6 +46,14 @@ if __name__ == '__main__':
 
     mlp_pfile = "./mlp_model_trip.pkl"
 
+    print("Inner mass ratio:",args.mratio_inner)
+    print("Outer mass ratio:",args.mratio_outer)
+    print("Semimajor axis ratio:",args.aratio)
+    print("Inner eccentricity:",args.ecc_inner)
+    print("Outer eccentricity:",args.ecc_outer)
+    print("Mutual inclination:",args.inc_mutual)
+    print()
+
     mlp_stable = mlp_classifier(mlp_pfile, args.mratio_inner, args.mratio_outer, args.aratio, args.ecc_inner, args.ecc_outer, args.inc_mutual)
     mlp_stable_string = "ML stable" if mlp_stable else "ML unstable"
 
