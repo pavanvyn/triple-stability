@@ -24,7 +24,7 @@ It is also possible to import the MLP classifier to another custom python3 scrip
 
     # generate initial numpy arrays qi, qo, al, ei, eo, im
 
-    mlp_pfile = "./mlp_model_best.pkl"
+    mlp_pfile = "./mlp_model_trip.pkl"
 
     mlp_stable = mlp_classifier(mlp_pfile, qi, qo, al, ei, eo, im)
 
