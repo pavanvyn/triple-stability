@@ -11,7 +11,7 @@ def mlp_classifier(mlp_pfile, qi, qo, al, ei, eo, im):
     if mlp_predict.shape[0] == 1:
         mlp_stable = mlp_predict[0,1] < 0.5
     else:
-        mlp_stable = mlp_predict[:,1] < 0.5
+        mlp_stable = mlp_predict[0,1] < 0.5
 
     return mlp_stable
 
