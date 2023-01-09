@@ -24,7 +24,8 @@ It is also possible to import the MLP classifier to another custom python3 scrip
 
     # generate initial numpy arrays qi, qo, al, ei, eo, im
 
-    mlp_pfile = "./mlp_model_trip.pkl"
+    mlp_pfile = "./mlp_model_trip.pkl" # stability defined on the basis of change in semimajor axes
+    # mlp_pfile = "./mlp_model_ghost_trip.pkl" # stability defined on the basis of divergence of similar ('ghost') orbits
 
     mlp_stable = mlp_classifier(mlp_pfile, qi, qo, al, ei, eo, im)
 
