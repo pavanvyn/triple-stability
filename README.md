@@ -1,5 +1,7 @@
 This repository contains a simple python3 code to check if a given configuration of a triple-star system is dynamically stable. Please refer to Vynatheya et al. (2022) (see https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.4146V/abstract) for details regarding the multi-layer perceptron classifier.
 
+Two MLP models are provided, using different defining criteria for stability. In Vynatheya et al. (2022), stabililty is defined on the basis of change in semimajor axes. Alternatively, in Vynatheya et al. (2023), stability is defined on the basis of divergence of similar ('ghost') orbits. Refer to both papers for details, if required.
+
 The first step is to install the scikit-learn package (if not already available) using the following terminal command:
 
     pip3 install scikit-learn
