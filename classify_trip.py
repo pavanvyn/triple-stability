@@ -36,7 +36,7 @@ if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("-qi","--mratio_inner",help="inner mass ratio m2/m1 < 1, m2<m1", default=1.0, type=float)
+    parser.add_argument("-qi","--mratio_inner",help="inner mass ratio m2/m1 <= 1, m2<=m1", default=1.0, type=float)
     parser.add_argument("-qo","--mratio_outer",help="outer mass ratio m3/(m1+m2)", default=0.5, type=float)
     parser.add_argument("-al","--aratio",help="semimajor axis ratio a_in/a_out < 1", default=0.2, type=float)
     parser.add_argument("-ei","--ecc_inner",help="inner eccentricity", default=0.0, type=float)
@@ -44,15 +44,8 @@ if __name__ == '__main__':
     parser.add_argument("-im","--inc_mutual",help="mutual inclination, in radian", default=0.0, type=float)
     args = parser.parse_args()
 
-    mlp_pfile = "./mlp_model_trip.pkl"
-
-    print("Inner mass ratio:",args.mratio_inner)
-    print("Outer mass ratio:",args.mratio_outer)
-    print("Semimajor axis ratio:",args.aratio)
-    print("Inner eccentricity:",args.ecc_inner)
-    print("Outer eccentricity:",args.ecc_outer)
-    print("Mutual inclination:",args.inc_mutual)
-    print()
+    mlp_pfile = "./mlp_model_trip.pkl" # change in semimajor axes definition
+    #mlp_pfile = "./mlp_model_trip_ghost.pkl" # divergence of similar ('ghost') orbits definition
 
     mlp_stable = mlp_classifier(mlp_pfile, args.mratio_inner, args.mratio_outer, args.aratio, args.ecc_inner, args.ecc_outer, args.inc_mutual)
     mlp_stable_string = "ML stable" if mlp_stable else "ML unstable"
