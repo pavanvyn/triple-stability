@@ -8,7 +8,7 @@ The first step is to install the scikit-learn package (if not already available)
     
 After changing to the repository directory, the python3 module is run on the terminal as follows:
 
-    python3 mlp_classify.py -qi 1.0 -qo 0.5 -al 0.2 -ei 0.0 -eo 0.0 -im 0.0
+    python3 classify_trip.py -qi 1.0 -qo 0.5 -al 0.2 -ei 0.0 -eo 0.0 -im 0.0
     
 Here, the arguments are:
 
@@ -22,7 +22,7 @@ Here, the arguments are:
 It is also possible to import the MLP classifier to another custom python3 script. The input parameters can also be numpy arrays, as shown in the sample script below:
 
     import numpy as np
-    from mlp_classify import mlp_classifier
+    from classify_trip import mlp_classifier
 
     # generate initial numpy arrays qi, qo, al, ei, eo, im
 
