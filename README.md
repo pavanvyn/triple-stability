@@ -1,4 +1,4 @@
-This repository contains a simple python3 code to check if a given configuration of a triple-star system is dynamically stable. Please refer to Vynatheya et al. (2023a) (see https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.4146V/abstract) adn Vynatheya et al. (2023b) (see https://ui.adsabs.harvard.edu/abs/2023arXiv230109930V/abstract) for details regarding the multi-layer perceptron classifier.
+This repository contains a simple python3 code to check if a given configuration of a triple-star system is dynamically stable. Please refer to Vynatheya et al. (2022) (see https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.4146V/abstract) and Vynatheya et al. (2023) (see https://ui.adsabs.harvard.edu/abs/2023arXiv230109930V/abstract) for details regarding the multi-layer perceptron classifier.
 
 Two MLP models are provided, using different defining criteria for stability. In Vynatheya et al. (2022), stabililty is defined on the basis of change in semimajor axes. Alternatively, in Vynatheya et al. (2023), stability is defined on the basis of divergence of similar ('ghost') orbits. Refer to both papers for details, if required.
 
@@ -33,6 +33,6 @@ It is also possible to import the MLP classifier to another custom python3 scrip
 
     # returns True if stable, False if unstable
 
-If this classification model is used for research, please cite our papers - https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.4146V/abstract (mlp_model_trip.pkl) or https://ui.adsabs.harvard.edu/abs/2023arXiv230109930V/abstract (mlp_model_trip_ghost.pkl)
+If these classification models are used for research, please cite our papers - https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.4146V/abstract (mlp_model_trip.pkl) or https://ui.adsabs.harvard.edu/abs/2023arXiv230109930V/abstract (mlp_model_trip_ghost.pkl).
 
 Enjoy classifying!
