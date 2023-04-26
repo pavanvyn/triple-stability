@@ -33,6 +33,6 @@ It is also possible to import the MLP classifier to another custom python3 scrip
 
     # returns True if stable, False if unstable
 
-If this classification model is used for research, please cite our paper - https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.4146V/abstract
+If this classification model is used for research, please cite our papers - https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.4146V/abstract (mlp_model_trip.pkl) or https://ui.adsabs.harvard.edu/abs/2023arXiv230109930V/abstract (mlp_model_trip_ghost.pkl)
 
 Enjoy classifying!
