@@ -4,7 +4,7 @@ Two MLP models are provided, using different defining criteria for stability. In
 
 The first step is to install a compatible version (1.0.2) of the scikit-learn package (the latest version should also work, but throws a warning of potential incompatibility) using the following terminal command:
 
-    pip3 install -v scikit-learn==1.0.2 
+    pip3 install -v scikit-learn==1.0.2
     
 After changing to the repository directory, the python3 module is run on the terminal as follows:
 
