@@ -2,9 +2,9 @@ This repository contains a simple python3 code to check if a given configuration
 
 Two MLP models are provided, using different defining criteria for stability. In Vynatheya et al. (2022), stabililty is defined on the basis of change in semimajor axes. Alternatively, in Vynatheya et al. (2023), stability is defined on the basis of divergence of similar ('ghost') orbits. Refer to both papers for details, if required.
 
-The first step is to install a compatible version (1.0.2) of scikit-learn package (if not already available) using the following terminal command:
+The first step is to install a compatible version (1.0.2) of the scikit-learn package (the latest version should also work, but throws a warning of potential incompatibility) using the following terminal command:
 
-    pip3 install -v scikit-learn==1.0.2 # the latest version also works, but throws a warning of potential incompatibility
+    pip3 install -v scikit-learn==1.0.2 
     
 After changing to the repository directory, the python3 module is run on the terminal as follows:
 
