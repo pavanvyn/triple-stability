@@ -26,6 +26,7 @@ Here, the arguments are:
 It is also possible to import the MLP classifier to another custom python3 script. The input parameters can also be numpy arrays, as shown in the sample script below:
 
     import numpy as np
+    import sklearn
     from classify_trip import mlp_classifier
 
     # generate initial numpy arrays qi, qo, al, ei, eo, im
