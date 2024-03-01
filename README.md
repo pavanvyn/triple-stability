@@ -16,12 +16,12 @@ After changing to the repository directory, the python3 module is run on the ter
     
 Here, the arguments are:
 
-1) qi (inner mass ratio):   $10^{-2} \leq q_{\mathrm{in}} = m_2 / m_1 \leq 1$
-2) qo (outer mass ratio):   $10^{-2} \leq q_{\mathrm{out}} = m_3 / (m_1+m_2) \leq 10^{2}$
-3) al (semimajor axis ratio):   $10^{-4} \leq \alpha = a_{\mathrm{in}} / a_{\mathrm{out}} \leq 1$
-4) ei (inner eccentricity):   $0 \leq e_{\mathrm{in}} \leq 1$
-5) eo (outer eccentricity):   $0 \leq e_{\mathrm{out}} \leq 1$
-6) im (mutual inclination):   $0 \leq i_{\mathrm{mut}} \leq \pi$
+1) `qi` (inner mass ratio):   $10^{-2} \leq q_{\mathrm{in}} = m_2 / m_1 \leq 1$
+2) `qo` (outer mass ratio):   $10^{-2} \leq q_{\mathrm{out}} = m_3 / (m_1+m_2) \leq 10^{2}$
+3) `al` (semimajor axis ratio):   $10^{-4} \leq \alpha = a_{\mathrm{in}} / a_{\mathrm{out}} \leq 1$
+4) `ei` (inner eccentricity):   $0 \leq e_{\mathrm{in}} \leq 1$
+5) `eo` (outer eccentricity):   $0 \leq e_{\mathrm{out}} \leq 1$
+6) `im` (mutual inclination):   $0 \leq i_{\mathrm{mut}} \leq \pi$
 
 It is also possible to import the MLP classifier to another custom python3 script. The input parameters can also be numpy arrays, as shown in the sample script below:
 
