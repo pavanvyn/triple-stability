@@ -4,13 +4,10 @@ This repository contains a simple `python3` (3.10.0 or higher) code to check if 
 
 Two MLP models are provided, using different defining criteria for stability. In Vynatheya et al. (2022), stabililty is defined on the basis of change in semimajor axes. Alternatively, in Vynatheya et al. (2023), stability is defined on the basis of divergence of similar ('ghost') orbits. Refer to both papers for details, if required.
 
-The first step is to install a compatible version (1.0.2) of the scikit-learn package (the latest version should also work, but throws a warning of potential incompatibility) using the following terminal command:
+The first step is to install a compatible version (1.0.2 or 1.2.2) of the scikit-learn package (the latest version should also work, but throws a warning of potential incompatibility) using the following terminal command:
 
-    pip3 install -v scikit-learn==1.0.2
-
-Edit: The version 1.0.2 pickle files have been replaced by new files compatible with the latest version of scikit-learn (1.2.2), so installing the old version is not necessary. However, the old pickle files are still retained in the repository, if required. Thus, the following command is sufficient:
-
-    pip3 install scikit-learn
+    # pip3 install -v scikit-learn==1.0.2
+    pip3 install -v scikit-learn==1.2.2
     
 After changing to the repository directory, the python3 module is run on the terminal as follows:
 
@@ -33,8 +30,8 @@ It is also possible to import the MLP classifier to another custom python3 scrip
 
     # generate initial numpy arrays qi, qo, al, ei, eo, im
 
-    mlp_pfile = "./mlp_model_trip.pkl" # change in semimajor axes definition
-    # mlp_pfile = "./mlp_model_trip_ghost.pkl" # divergence of similar ('ghost') orbits definition
+    mlp_pfile = "./mlp_model_trip_v1.2.2.pkl" # change in semimajor axes definition
+    # mlp_pfile = "./mlp_model_trip_ghost_v1.2.2.pkl" # divergence of similar ('ghost') orbits definition
 
     mlp_stable = mlp_classifier(mlp_pfile, qi, qo, al, ei, eo, im)
 
