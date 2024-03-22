@@ -25,7 +25,7 @@ Here, the arguments are:
 It is also possible to import the MLP classifier to another custom python3 script. The input parameters can also be numpy arrays, as shown in the sample script below:
 
     import numpy as np
-    import sklearn
+    # 'import sklearn' is not necessary, but scikit-learn needs to be installed
     from classify_trip import mlp_classifier
 
     # generate initial numpy arrays qi, qo, al, ei, eo, im
@@ -35,7 +35,7 @@ It is also possible to import the MLP classifier to another custom python3 scrip
 
     mlp_stable = mlp_classifier(mlp_pfile, qi, qo, al, ei, eo, im)
 
-    # returns True if stable, False if unstable
+    # mlp_stable stores True if stable, False if unstable
 
 If these classification models are used for research, please cite our papers - https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.4146V/abstract (mlp_model_trip.pkl) or https://ui.adsabs.harvard.edu/abs/2023arXiv230109930V/abstract (mlp_model_trip_ghost.pkl).
 
