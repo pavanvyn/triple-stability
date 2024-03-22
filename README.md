@@ -30,8 +30,8 @@ It is also possible to import the MLP classifier to another custom python3 scrip
 
     # generate initial numpy arrays qi, qo, al, ei, eo, im
 
-    mlp_pfile = "./mlp_model_trip_v1.2.2.pkl" # change in semimajor axes definition
-    # mlp_pfile = "./mlp_model_trip_ghost_v1.2.2.pkl" # divergence of similar ('ghost') orbits definition
+    # mlp_pfile = "./mlp_model_trip_v1.2.2.pkl" # change in semimajor axes definition
+    mlp_pfile = "./mlp_model_trip_ghost_v1.2.2.pkl" # divergence of similar ('ghost') orbits definition
 
     mlp_stable = mlp_classifier(mlp_pfile, qi, qo, al, ei, eo, im)
 
