@@ -8,7 +8,10 @@ The first step is to install a compatible version (1.0.2 or 1.2.2) of the scikit
 
     # pip3 install -v scikit-learn==1.0.2
     pip3 install -v scikit-learn==1.2.2
-    
+
+
+## Implementing the classifier in `python3` (simplest option)
+
 After changing to the repository directory, the python3 module is run on the terminal as follows:
 
     python3 classify_trip.py -qi 1.0 -qo 0.5 -al 0.2 -ei 0.0 -eo 0.0 -im 0.0
