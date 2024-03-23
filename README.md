@@ -51,11 +51,12 @@ The `-I` flag is only necessary if the `python` header files are not in the syst
 
     #include "classify_trip_wrapper.h"
 
-    int main():
+    int main() {
         // char mlp_pfile[] = "./mlp_model_trip_v1.2.2.pkl"; // change in semimajor axes definition
         char mlp_pfile[] = "./mlp_model_trip_ghost_v1.2.2.pkl"; // divergence of similar ('ghost') orbits definition
 
         double mratio_inner, mratio_outer, aratio, ecc_inner, ecc_outer, inc_mutual;
+        
         // define these quantities
 
         int mlp_stable = mlp_classifier(mlp_pfile, mratio_inner, mratio_outer, aratio, ecc_inner, ecc_outer, inc_mutual);
@@ -63,6 +64,7 @@ The `-I` flag is only necessary if the `python` header files are not in the syst
         // mlp_stable stores 1 if stable, 0 if unstable
 
         return 0;
+    }
 
 This custom script (`C` and `C++` respectively) is compile similarly:
 
