@@ -55,11 +55,11 @@ The `-I` flag is only necessary if the `python` header files are not in the syst
         // char mlp_pfile[] = "./mlp_model_trip_v1.2.2.pkl"; // change in semimajor axes definition
         char mlp_pfile[] = "./mlp_model_trip_ghost_v1.2.2.pkl"; // divergence of similar ('ghost') orbits definition
 
-        double mratio_inner, mratio_outer, aratio, ecc_inner, ecc_outer, inc_mutual;
+        double qi, qo, al, ei, eo, im;
         
         // define these quantities
 
-        int mlp_stable = mlp_classifier(mlp_pfile, mratio_inner, mratio_outer, aratio, ecc_inner, ecc_outer, inc_mutual);
+        int mlp_stable = mlp_classifier(mlp_pfile, qi, qo, al, ei, eo, im);
 
         // mlp_stable stores 1 if stable, 0 if unstable
 
