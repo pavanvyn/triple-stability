@@ -47,7 +47,7 @@ One way to include our classifiers in `C` is to use a `python` interface. This i
 
     gcc classify_trip_wrapper.c -o classify_trip_wrapper.out -I /usr/include/python3.10 -lpython3.10
 
-The `-I` flag is only necessary if the `python` header files are not in the system path, and the `-lpython3.10` flag allows `C` to interact with `python3` (3.10.0 or higher). To include the wrapper script in a custom `C`/`C++` script, it is sufficient to include the header file `classify_trip_wrapper.c`. An example is as follows:
+The `-I` flag is only necessary if the `python` header files are not in the system path, and the `-lpython3.10` flag allows `C` to interact with `python3` (3.10.0 or higher). To include the wrapper script in a custom `C`/`C++` script, it is sufficient to include the header file `classify_trip_wrapper.h`. An example is as follows:
 
     #include "classify_trip_wrapper.h"
 
