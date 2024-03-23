@@ -10,7 +10,7 @@ The first step is to install a compatible version (1.0.2 or 1.2.2) of the scikit
     pip3 install -v scikit-learn==1.2.2
 
 
-## Implementing the classifier in `python3` (simplest option)
+## Implementing our classifiers in `python3` (simplest option)
 
 After changing to the repository directory, the python3 module is run on the terminal as follows:
 
@@ -39,6 +39,10 @@ It is also possible to import the MLP classifier to another custom python3 scrip
     mlp_stable = mlp_classifier(mlp_pfile, qi, qo, al, ei, eo, im)
 
     # mlp_stable stores True if stable, False if unstable
+
+
+## Implementing our classifiers in C (or C++)
+
 
 
 ## Citing our work
