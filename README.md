@@ -37,12 +37,37 @@ It is also possible to import the MLP classifier to another custom python3 scrip
     mlp_pfile = "./mlp_model_trip_ghost_v1.2.2.pkl" # divergence of similar ('ghost') orbits definition
 
     mlp_stable = mlp_classifier(mlp_pfile, qi, qo, al, ei, eo, im)
-
+    
     # mlp_stable stores True if stable, False if unstable
 
 
-## Implementing our classifiers in C (or C++)
+## Implementing our classifiers in `C`/`C++`
 
+One way to include our classifiers in `C` is to use a `python` interface. This is done by including the `Python.h` header file. This should already be present in your system by default, but if not, python3-dev should be installed. `classify_trip_wrapper.c` implements this and should be compiled as folllows:
+
+    gcc classify_trip_wrapper.c -o classify_trip_wrapper.out -I /usr/include/python3.10 -lpython3.10
+
+The `-I` flag is only necessary if the `python` header files are not in the system path, and the `-lpython3.10` flag allows `C` to interact with `python3` (3.10.0 or higher). To include the wrapper script in a custom `C`/`C++` script, it is sufficient to include the header file `classify_trip_wrapper.c`. An example is as follows:
+
+    #include "classify_trip_wrapper.h"
+
+    int main():
+        // char mlp_pfile[] = "./mlp_model_trip_v1.2.2.pkl"; // change in semimajor axes definition
+        char mlp_pfile[] = "./mlp_model_trip_ghost_v1.2.2.pkl"; // divergence of similar ('ghost') orbits definition
+
+        double mratio_inner, mratio_outer, aratio, ecc_inner, ecc_outer, inc_mutual;
+        // define these quantities
+
+        int mlp_stable = mlp_classifier(mlp_pfile, mratio_inner, mratio_outer, aratio, ecc_inner, ecc_outer, inc_mutual);
+
+        // mlp_stable stores 1 if stable, 0 if unstable
+
+        return 0;
+
+This custom script (`C` and `C++` respectively) is compile similarly:
+
+    gcc my_program.c classify_trip_wrapper.c -o my_program.out -I /usr/include/python3.10 -lpython3.10
+    g++ my_program.cpp classify_trip_wrapper.c -o my_program.out -I /usr/include/python3.10 -lpython3.10
 
 
 ## Citing our work
