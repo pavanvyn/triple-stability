@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Triple stability</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="style.css"/>
+
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="main.js" defer></script> -->
+	</head>
+
+	<body>
+		<h1>Stability of triple-star systems</h1>
+		
+		<form action="triple_stability.php" method="post">
+			<label for="qi">Inner mass ratio m2/m1:</label>
+			<input type="number" step="any" name="qi" placeholder="1.0"/><br/>
+
+			<label for="qi">Outer mass ratio m3/(m1+m2):</label>
+			<input type="number" step="any" name="qo" placeholder="0.5"/><br/>
+
+			<label for="al">Semimajor axis ratio ai/ao:</label>
+			<input type="number" step="any" name="al" placeholder="0.2"/><br/>
+
+			<label for="ei">Inner eccentricity ei:</label>
+			<input type="number" step="any" name="ei" placeholder="0.0"/><br/>
+
+			<label for="eo">Inner mass ratio m2/m1:</label>
+			<input type="number" step="any" name="eo" placeholder="0.0"/><br/>
+
+			<label for="im">Mutual inclination im:</label>
+			<input type="number" step="any" name="im" placeholder="0.0"/><br/>
+
+			<input type="submit" value="Submit"/>
+		</form>
+
+	</body>
+</html>
+
+
