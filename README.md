@@ -86,6 +86,6 @@ g++ my_program.cpp classify_trip_wrapper.c -o my_program.out -I /usr/include/pyt
 
 ## Citing our work
 
-If these classification models are used for research, please cite our papers - [Vynatheya et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.4146V/abstract) (mlp_model_trip.pkl) or [Vynatheya et al. (2023)](https://ui.adsabs.harvard.edu/abs/2023arXiv230109930V/abstract) (mlp_model_trip_ghost.pkl).
+If these classification models are used for research, please cite our papers - [Vynatheya et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.4146V/abstract) (`mlp_model_trip.pkl`) or [Vynatheya et al. (2023)](https://ui.adsabs.harvard.edu/abs/2023arXiv230109930V/abstract) (`mlp_model_trip_ghost.pkl`).
 
 Enjoy classifying!
