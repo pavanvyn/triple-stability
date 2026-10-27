@@ -78,6 +78,9 @@ This custom script (`C` and `C++` respectively) is compiled similarly:
 
 ```console
 gcc my_program.c classify_trip_wrapper.c -o my_program.out -I /usr/include/python3.10 -lpython3.10
+```
+
+```console
 g++ my_program.cpp classify_trip_wrapper.c -o my_program.out -I /usr/include/python3.10 -lpython3.10
 ```
 
