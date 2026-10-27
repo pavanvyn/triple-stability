@@ -15,7 +15,7 @@ pip3 install -v scikit-learn==1.2.2
 
 After changing to the repository directory, the python3 module is run on the terminal as follows:
 
-```python
+```console
 python3 classify_trip.py -qi 1.0 -qo 0.5 -al 0.2 -ei 0.0 -eo 0.0 -im 0.0
 ```
     
